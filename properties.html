@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Properties - Urban Nest</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+        }
+
+        header {
+            background-color: #0b1f3a;
+            color: white;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #173b68;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+        nav a:hover {
+            border-bottom: 2px solid white;
+            padding-bottom: 5px;
+        }
+
+
+        #start{
+            background-color: #0b1f3a;
+            color: white;
+            text-align: center;
+            padding: 35px 15px;
+        }
+        #start h2{
+            font-size: 30px;
+            margin-top: 0px;
+        }
+        #start p{
+            color: #d9e2f0;
+        }
+        #property-card{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 30px 20px;
+        }
+        .property {
+            background-color: white;
+            width: 280px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.12);
+            transition: 0.3s;
+        }
+        .property:hover{
+            transform: translateY(-10px);
+        }
+        .property img{
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+        .details{
+            padding: 15px;
+        }
+        .property h3{
+            color: #0b1f3a;
+            margin-top: 5px;
+            margin-bottom: 10px;
+
+        }
+        .label{
+            padding: 6px 9px;
+            margin: 0 4px 5px 0;
+            border-radius: 5px;
+            color: white;
+            font-size: 11px;
+            display: inline-block;
+        }
+        .sale{
+            background-color: #173b68;
+        }
+        .rent{
+            background-color: #26734d;
+        }
+        .commercial{
+            background-color: #805ad5;
+        }
+        .land{
+            background-color: #a16207;
+        }
+        .vacation{
+            background-color: #0f766e;
+        }
+        .price{
+            color: #26734d;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        .some-lines{
+            color: #555;
+            font-size: 14px;
+        }
+        .details a{
+            display: inline-block;
+            background-color: #173b68;
+            color: white;
+            text-decoration: none;
+            padding: 10px 14px;
+            border-radius: 10px;
+        }
+        .details a:hover{
+            background-color: #0b1f3a;
+        }
+
+
+
+
+        footer {
+            background-color: #173b68;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+<header>
+        <center>
+         <h1>Urban Nest</h1>
+        <p>Find Your Dream Home</p>
+        </center>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="properties.html">Properties</a>
+        <a href="services.html">Services</a>
+        <a href="about us.html">About Us</a>
+        <a href="contact us.html">Contact Us</a>
+        <a href="Login.html">Login</a>
+        <a href="sign up.html">Sign Up</a>
+    </nav>
+
+    <section id="start">
+        <h2>EXPLORE OUR PROPERTIES</h2>
+    <p>From Affoardable homes to luxuary properties,
+        find the perfect place for your needs and budget.
+    </p>
+
+    </section>
+
+    <section id="property-card">
+        <!-- 1 -->
+        <div class="property">
+            <img src="images/images.jpg" alt="Budget Apartment">
+            <div class="details">
+                <h3>Budget Apartment</h3>
+                    <span class="label sale">For Sale</span>
+                    <p class="price">₹48 Lakh</p>
+                <p class="some-lines">An affordable apartment for first-time home buyres.</p>
+                <a href="Inquiry.html">Enquire now</a>
+            </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="property">
+            <img src="images/flat.jpg" alt="Modern City Flat">
+            <div class="details">
+                <h3>Modern City Flat</h3>
+                    <span class="label rent">For Rent</span>
+                    <p class="price">₹15,000/month</p>
+                    <p class="some-lines">A modern flat close to shops and city facilities.</p>
+                <a href="Inquiry.html">Enquire now</a>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="property">
+            <img src="images/istockphoto-2148850507-612x612.jpg" alt="Family Home">
+            <div class="details">
+                <h3>Family Home</h3>
+                    <span class="label sale">For Sale</span>
+                    <p class="price">₹1 crore</p>
+                    <p class="some-lines">A comfortable home with space for the whole family.</p>
+                <a href="Inquiry.html">Enquire now</a>
+            </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="property">
+            <img src="images/NQS_MS_LENORA_View_20_Bedroom_gbgxsr.jpg" alt="Premium Apartment">
+            <div class="details">
+                <h3>Modern Apartment</h3>
+                    <span class="label sale">For Sale</span>
+                    <p class="price">₹33 Lakh</p>
+                    <p class="some-lines">A premium apartment with modern interiors.</p>
+                <a href="Inquiry.html">Enquire now</a>
+            </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="property">
+            <img src="images/istockphoto-1124556150-612x612.jpg" alt="Duplex House">
+            <div class="details">
+                <h3>Duplex House</h3>
+                    <span class="label sale">For Sale</span>
+                    <p class="price">₹1.6 crore</p>
+                    <p class="some-lines">A spacious Duplex House with an elegant design.</p>
+                <a href="Inquiry.html">Enquire now</a>
+            </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="property">
+            <img src="images/istockphoto-2161460025-612x612.jpg" alt="Modern Bungalow">
+            <div class="details">
+                <h3>Beautiful Bungalow</h3>
+                    <span class="label sale">For Sale</span>
+                    <p class="price">₹2.8 crore</p>
+                    <p class="some-lines">An independent bungalow with a spacious layout.</p>
+                <a href="Inquiry.html">Enquire now</a>
+            </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="property">
+            <img src="images/istockphoto-2223376026-612x612.jpg" alt="Luxury Villa">
+            <div class="details">
+                <h3>Luxuary Villa</h3>
+                    <span class="label sale">For sale</span>
+                    <p class="price">₹2.3 crore</p>
+                    <p class="some-lines">A luxury Villa with a beautiful outdoor area.</p>
+                <a href="Inquiry.html">Enquire now</a>
+            </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="property">
+            <img src="images/930c7db64d4082c42b6dc4b3f0a716d0.jpg" alt="Luxury Penthouse">
+            <div class="details">
+                <h3>Luxury Penthouse</h3>
+                    <span class="label rent">For Rent</span>
+                    <p class="price">₹80,000/month</p>
+                    <p class="some-lines">A premium penthouse with stylish interior.</p>
+                <a href="Inquiry.html">Enquire now</a>
+            </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="property">
+            <img src="images/images(1).jpg" alt="Luxury Farmhouse">
+            <div class="details">
+                <h3>Luxury Farmhouse</h3>
+                    <span class="label sale">For Sale</span>
+                    <p class="price">₹6.5 crore</p>
+                    <p class="some-lines">A peaceful farmhouse surrounded by open space.</p>
+                <a href="Inquiry.html">Enquire now</a>
+            </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="property">
+            <img src="images/360_F_352820664_AQOdPW8j7ZXxjtHDiBM9c5w7NRjKmdKn.jpg" alt="Small Retail Shop ">
+            <div class="details">
+                <h3> Small Retail Shop</h3>
+                    <span class="label rent">For Rent</span>
+                    <p class="price">₹10,000/month</p>
+                    <p class="some-lines">A retail shop for a small buisness or store.</p>
+                <a href="Inquiry.html">Enquire now</a>
+            </div>
+        </div>
+        
+        <!-- 11 -->
+         <div class="property">
+            <img src="images/images(2).jpg" alt="Compact Office">
+            <div class="details">
+                <h3>Compact Office</h3>
+                    <span class="label commercial">Commercial</span>
+                    <span class="label rent">For Rent</span>
+                    <p class="price">₹25,000/month</p>
+                    <p class="some-lines">A compact workspace for a small team.</p>
+                <a href="Inquiry.html">Enquire now</a>
+            </div>
+        </div>
+
+        <!-- 12 -->
+         <div class="property">
+            <img src="images/commercial-showroom-and-retail-space-for-lease-sorrento-andheri-west-500x500.jpg" alt="Commercial Showroom">
+            <div class="details">
+                <h3>Commercial Showroom</h3>
+                    <span class="label commercial">Commercial</span>
+                    <span class="label sale">For Sale</span>
+                    <p class="price">₹1 crore</p>
+                    <p class="some-lines">A showroom suitable for retail and display.</p>
+                <a href="Inquiry.html">Enquire now</a>
+            </div>
+        </div>
+
+        <!-- 13 -->
+         <div class="property">
+            <img src="images/1753340101791.jpg" alt="Premium Office Space">
+            <div class="details">
+                <h3>Premium Office Space</h3>
+                    <span class="label commercial">Commercial</span>
+                    <span class="label rent">For Rent</span>
+                    <p class="price">₹40,000/month</p>
+                    <p class="some-lines">A premium office for proffessional buisness.</p>
+                <a href="Inquiry.html">Enquire now</a>
+            </div>
+        </div>
+
+        <!-- 14 -->
+         <div class="property">
+            <img src="images/commercial-building-design-complete-guide-image.jpg" alt="Commercial Building">
+            <div class="details">
+                <h3>Commercial Building</h3>
+                <span class="label commercial">Commercial</span>
+                    <span class="label sale">For Sale</span>
+                    <p class="price">₹7 crore</p>
+                    <p class="some-lines">A commercial building for buisness use.</p>
+                <a href="Inquiry.html">Enquire now</a>
+            </div>
+        </div>
+
+        <!-- 15 -->
+         <div class="property">
+            <img src="images/images(3).jpg" alt="Residential Plot">
+            <div class="details">
+                <h3>Residential Plot</h3>
+                    <span class="label land">Land</span>
+                    <span class="label sale">For Sale</span>
+                    <p class="price">₹15 Lakh</p>
+                    <p class="some-lines">A plot suitable for building home.</p>
+                <a href="Inquiry.html">Enquire now</a>
+            </div>
+        </div>
+
+        <!-- 16 -->
+         <div class="property">
+            <img src="images/images(4).jpg" alt="Commercial Plot">
+            <div class="details">
+                <h3>Commercial Plot</h3>
+                    <span class="label commercial">Commercial</span>
+                    <span class="label land">Land</span>
+                    <span class="label sale">For Sale</span>
+                    <p class="price">₹70 Lakh</p>
+                    <p class="some-lines">A plot suitable for future commercial development.</p>
+                <a href="Inquiry.html">Enquire now</a>
+            </div>
+        </div>
+
+        <!-- 17 -->
+         <div class="property">
+            <img src="images/ZzIXugE4jHu4yRMBxLov1de7OQe4DUBu.png" alt="Budget Studio Stay">
+            <div class="details">
+                <h3>Budget Studio Stay</h3>
+                    <span class="label vacation">Vacation Rental</span>
+                    <p class="price">₹1,000/night</p>
+                    <p class="some-lines">A simple studio for a short holiday stay.</p>
+                <a href="Inquiry.html">Enquire now</a>
+            </div>
+        </div>
+        <!-- 18 -->
+         <div class="property">
+            <img src="images/images(5).jpg" alt="City Holiday Apartment">
+            <div class="details">
+                <h3>City Holiday Apartment</h3>
+                    <span class="label vacation">Vacation Rental</span>
+                    <p class="price">₹3,000/night</p>
+                    <p class="some-lines">A comfortable apartment for a city break.</p>
+                <a href="Inquiry.html">Enquire now</a>
+            </div>
+        </div>
+
+        <!-- 19 -->
+         <div class="property">
+            <img src="images/images(6).jpg" alt="Private Pool Villa">
+            <div class="details">
+                <h3>Private Pool Villa</h3>
+                    <span class="label vacation">Vacation Rental</span>
+                    <p class="price">₹10,000/night</p>
+                    <p class="some-lines">A private villa for a relaxing holiday.</p>
+                <a href="Inquiry.html">Enquire now</a>
+            </div>
+        </div>
+
+        <!-- 20 -->
+         <div class="property">
+            <img src="images/7e31a537.jpg" alt="Luxury View Stay">
+            <div class="details">
+                <h3>Luxury View Stay</h3>
+                    <span class="label vacation">Vacation Rental</span>
+                    <p class="price">₹18,000/night</p>  
+                    <p class="some-lines">A luxury stay with beautiful views.</p>
+                <a href="Inquiry.html">Enquire now</a>
+            </div>
+        </div>
+
+    </section>
+
+    <footer>
+        <div id="details">
+
+        <p>
+            &copy; 2026 Urban Nest. All Rights   Reserved.
+        </p>
+        </div>
+    </footer>
+
+</body>
+</html>

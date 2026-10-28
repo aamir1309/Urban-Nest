@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home - Urban Nest</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+        }
+
+        header {
+            background-color: #0b1f3a;
+            color: white;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #173b68;
+            text-align: center;
+            padding: 12px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+        nav a:hover {
+            border-bottom: 2px solid white;
+            padding-bottom: 5px;
+        }
+        
+
+        #main-heading{
+            text-align: center;
+            color: #0b1f3a;
+            font-size: 40px;
+            margin-top: 50px;
+        }
+        #main-para{
+             text-align: center;
+            color: #555555;
+            font-size: 20px;
+            margin-bottom: 50px;
+        }
+
+
+        #featured{
+            padding: 40px;
+        }
+         #featured h2 {
+            color: #0b1f3a;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        #cards{
+            display: flex;
+            justify-content: space-between;
+            gap: 25px;
+
+        }
+        .property{
+            background-color: white;
+            text-align: center;
+            border-radius: 10px;
+            padding: 20px;
+            flex: auto;
+            transition: 0.3s;
+        }
+        .property:hover{
+            transform: translatey(-10px);
+        }
+        .property img{
+            width: 100%;
+            height: 200px;
+            border-radius: 10px;
+        }
+        .property h3 {
+            color: #0b1f3a;
+        }
+
+        .price {
+            color: #173b68;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        
+        #whyus{
+            background-color: white;
+            margin: 30px;
+            padding: 25px;
+            border-radius: 10px;
+        }
+        #whyus{
+            color: #0b1f3a;
+            border-bottom: 8px solid #173b68;
+            padding-bottom: 10px;
+            
+        }
+        #whyus li{
+            padding: 10px;
+            columns: #555555;
+        }
+
+
+        #services{
+            padding: 30px;
+        }
+
+        #services h2 {
+            color: #0b1f3a;
+            border-bottom: 3px solid #173b68;
+            padding-bottom: 10px;
+        }
+
+        #service-cards {
+            display: flex;
+            gap: 25px;
+        }
+
+        .service {
+            background-color: white;
+            flex: auto;
+            padding: 25px;
+            border-radius: 10px;
+            border-bottom: 8px solid #173b68;
+            transition: 0.3s;
+        }
+        .service:hover{
+            transform: translateY(-10px);
+        }
+
+        .service h3 {
+            color: #0b1f3a;
+        }
+
+        .service p {
+            color: #555555;
+        }
+        footer {
+            background-color: #173b68;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+
+    <body>
+
+    <header>
+        <center>
+         <h1>Urban Nest</h1>
+        <p>Find Your Dream Home</p>
+        </center>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="properties.html">Properties</a>
+        <a href="services.html">Services</a>
+        <a href="about us.html">About Us</a>
+        <a href="contact us.html">Contact Us</a>
+        <a href="Login.html">Login</a>
+        <a href="sign up.html">Sign Up</a>
+    </nav>  
+    <h2 id="main-heading">FIND YOUR DREAM HOME</h2>
+
+    <p id="main-para">Your perfect property is waiting for you</p> 
+
+<div id="featured">
+
+        <h2>FEATURED PROPERTIES</h2>
+
+    <div id="cards">
+
+        <div class="property">
+            <img src="images/istockphoto-2223376026-612x612.jpg" alt="Luxury Villa">
+            <h3>Luxury Villa</h3>
+            <p class="price">₹85 lakh</p>
+            <a href="properties.html">Click here for details</a>
+        </div>
+
+        <div class="property">
+            <img src="images/NQS_MS_LENORA_View_20_Bedroom_gbgxsr.jpg" alt="Modern Apartment">
+            <h3>Modern Apartment</h3>
+            <p class="price">₹55 lakh</p>
+            <a href="properties.html">Click here for details</a>
+        </div>
+
+        <div class="property">
+            <img src="images/istockphoto-2161460025-612x612.jpg" alt="Beautiful Bungalow">
+            <h3>Beautiful Bungalow</h3>
+            <p class="price">₹1.2 crore</p>
+            <a href="properties.html">Click here for details</a>
+        </div>
+
+    </div>
+
+</div>
+
+<div id="whyus">
+
+    <h2>Why Choose Us?</h2>
+    <hr color="#173b68">
+    <ul>
+        <li>Wide Range of Properties</li>
+        <li>Trusted Property Listings</li>
+        <li>Expert Guidance</li>
+        <li>Easy and Reliable Service</li>
+    </ul>
+
+</div>
+
+<div id="services">
+
+        <h2>Our Services</h2>
+
+    <div id="service-cards">
+
+        <div class="service">
+            <h3>Buying</h3>
+            <p>Find the perfect property according to your needs.</p>
+        </div>
+
+        <div class="service">
+            <h3>Selling</h3>
+            <p>Get the right opportunities to sell your property.</p>
+        </div>
+
+        <div class="service">
+            <h3>Renting</h3>
+            <p>Discover comfortable properties available for rent.</p>
+        </div>
+
+    </div>
+
+</div>
+    <footer>
+        <div id="details">
+
+        <p>
+            &copy; 2026 Urban Nest. All Rights Reserved.
+        </p>
+        </div>
+    </footer>
+
+
+</body>
+</html>
